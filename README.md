@@ -66,12 +66,12 @@ products_detected = {
 
 | Class | Image | mAP50 |
 | --- | --- | --- |
-| clear men | ![Live Demo](assets/clearmen.jpg) | 0.995 |
-| cocacola | ![Live Demo](assets/cocacola.jpg) | 0.877 |
-| mi hao hao | ![Live Demo](assets/haohao.jpg) | 0.995 |
-| sua milo | ![Live Demo](assets/milo.jpg) | 0.66 |
-| tra xanh khong do | ![Live Demo](assets/tra_xanh_khong_do.jpg) | 0.699 |
-| tuong ot chinsu | ![Live Demo](assets/chinsu.jpg) | 0.995 |
+| clear men | <img src="assets/clearmen.jpg" width="120"/> | 0.995 |
+| cocacola | <img src="assets/cocacola.jpg" width="120"/> | 0.877 |
+| mi hao hao | <img src="assets/haohao.jpg" width="120"/> | 0.995 |
+| sua milo | <img src="assets/milo.jpg" width="120"/> | 0.66 |
+| tra xanh khong do | <img src="assets/tra_xanh_khong_do.jpg" width="120"/> | 0.699 |
+| tuong ot chinsu | <img src="assets/chinsu.jpg" width="120"/> | 0.995 |
 
 **Experiments:**
 
