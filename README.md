@@ -41,11 +41,6 @@ A computer vision-powered self-checkout system — detect products → count →
 2. For each newly detected product (compared to the previous frame):
     - The system **queries product info** from the SANPHAM table by product_name.
     - Updates the internal products_detected dictionary:
-
-python
-
-Sao chépChỉnh sửa
-
 products_detected = {
 
 'CocaCola': {'price': 10000, 'quantity': 2},
@@ -76,4 +71,10 @@ products_detected = {
 **Experiments:**
 
 For each class, I take the first 100 images, and then split them to training ,test sets and valid set with ratio 6/2/2. The training/test/valid loss/accuracy curves for the experiment are shown below:
+![Live Demo](assets/tk.jpg)
+
+**Result:**
+
+![Live Demo](assets/test.jpg)
+![Live Demo](assets/thanhtoan.jpg)
 
