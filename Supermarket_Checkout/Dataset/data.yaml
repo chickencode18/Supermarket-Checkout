@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['clear men', 'cocacola', 'mi hao hao', 'sua milo', 'tra xanh khong do', 'tuong ot chinsu']
+
+roboflow:
+  workspace: drinks-wcqwn
+  project: supermarket111
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/drinks-wcqwn/supermarket111/dataset/1

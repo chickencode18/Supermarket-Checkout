@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hóa đơn thanh toán</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>HÓA ĐƠN THANH TOÁN</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá (VND)</th>
+                <th>Số lượng</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in products %}
+            <tr>
+                <td>{{ p.name }}</td>
+                <td>{{ p.price }}</td>
+                <td>{{ p.quantity }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h3>Tổng số lượng: {{ total_quantity }}</h3>
+    <h3>Tổng tiền: {{ total_price }} VND</h3>
+</body>
+</html>
