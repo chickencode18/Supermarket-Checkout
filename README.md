@@ -1,5 +1,5 @@
 **\[PYTHON\] Supermarket Checkout**
-
+---
 **🛒 Introduce**
 
 This project is a **Smart Checkout System** that simulates an automated cashier counter using AI.  
@@ -10,7 +10,7 @@ By combining **YOLOv8 (object detection)**, **Flask (web interface)**, and **SQL
 - Display a live invoice on a web page for user checkout.
 
 The system aims to **replace traditional barcode scanning** by recognizing products visually, making the checkout process faster and smarter. It's a practical demonstration of how **AI and computer vision** can be applied in **retail and self-service environments**.
-
+---
 **💡 TL;DR:**
 
 A computer vision-powered self-checkout system — detect products → count → calculate total → display receipt on web.
@@ -24,9 +24,8 @@ A computer vision-powered self-checkout system — detect products → count →
 | **Camera (OpenCV)** | Captures live video stream using cv2.VideoCapture(). |
 | **SQL Server** | Stores product data in the SANPHAM table (Names, Price). |
 | **Threading** | Runs Flask and the camera simultaneously using Python's threading.Thread. |
-
+---
 **⚙️ Description of Operation**
-
 **🔄 Simultaneous Execution:**
 
 - **Thread 1 – Flask**:  
@@ -34,7 +33,7 @@ A computer vision-powered self-checkout system — detect products → count →
     👉 <http://127.0.0.1:5000/checkout>
 - **Thread 2 – Camera Detection**:  
     Opens the webcam and continuously detects products using YOLOv8.
-
+---
 **📦 Product Detection Flow:**
 
 1. The camera detects products in real-time.
@@ -56,6 +55,7 @@ products_detected = {
 1. **Visual feedback**:
     - Bounding boxes and product names are drawn on the camera frame.
     - The web invoice (/checkout) updates live with current product list and total cost.
+---
 
 **DataSet:**
 
@@ -67,11 +67,13 @@ products_detected = {
 | sua milo | <img src="assets/milo.jpg" width="120"/> | 0.66 |
 | tra xanh khong do | <img src="assets/tra_xanh_khong_do.jpg" width="120"/> | 0.699 |
 | tuong ot chinsu | <img src="assets/chinsu.jpg" width="120"/> | 0.995 |
-
+---
 **Experiments:**
 
 For each class, I take the first 100 images, and then split them to training ,test sets and valid set with ratio 6/2/2. The training/test/valid loss/accuracy curves for the experiment are shown below:
 ![Live Demo](assets/tk.jpg)
+
+---
 
 **Result:**
 
