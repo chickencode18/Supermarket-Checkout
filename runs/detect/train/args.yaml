@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: D:/code/Computer_vision/Supermarket_checkout/models/yolov8n.pt
-data: D:/code/Computer_vision/Supermarket_checkout/datasets/dataset.yaml
-epochs: 50
+model: yolov8n.pt
+data: D:/code/Computer_vision1/Supermarket_checkout/datasets/data.yaml
+epochs: 200
 time: null
 patience: 100
 batch: 16
@@ -10,7 +10,7 @@ imgsz: 640
 save: true
 save_period: -1
 cache: false
-device: null
+device: cuda:0
 workers: 0
 project: null
 name: train

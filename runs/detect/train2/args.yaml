@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: D:/code/Computer_vision/runs/detect/train/weights/best.pt
-data: D:/code/Computer_vision/Supermarket_checkout/datasets/dataset.yaml
-epochs: 50
+model: D:/code/Computer_vision1/runs/detect/train/weights/last.pt
+data: D:/code/Computer_vision1/Supermarket_checkout/datasets/data.yaml
+epochs: 10
 time: null
 patience: 100
 batch: 16
